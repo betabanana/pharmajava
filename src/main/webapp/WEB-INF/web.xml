@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>ServletCommande</display-name>
+    <servlet-name>ServletCommande</servlet-name>
+    <servlet-class>web.ServletCommande</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletCommande</servlet-name>
+    <url-pattern>/AdminCommande</url-pattern>
+  </servlet-mapping>
+  <display-name>pharmajava</display-name>
+  <welcome-file-list>
+    <!--<welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>-->
+  </welcome-file-list>
+  <servlet>
+    <display-name>ServletPanier</display-name>
+    <servlet-name>ServletPanier</servlet-name>
+    <servlet-class>web.ServletPanier</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletPanier</servlet-name>
+    <url-pattern>/panier</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletAdmin</display-name>
+    <servlet-name>ServletAdmin</servlet-name>
+    <servlet-class>web.ServletAdmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAdmin</servlet-name>
+    <url-pattern>/AdminMedcamnet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletAjouterMed</display-name>
+    <servlet-name>ServletAjouterMed</servlet-name>
+    <servlet-class>web.ServletAjouterMed</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAjouterMed</servlet-name>
+    <url-pattern>/ServletAjouterMed</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletAjouterInstance</display-name>
+    <servlet-name>ServletAjouterInstance</servlet-name>
+    <servlet-class>web.ServletAjouterInstance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAjouterInstance</servlet-name>
+    <url-pattern>/ServletAjouterInstance</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <description></description>
+    <display-name>ServletModifer</display-name>
+    <servlet-name>ServletModifer</servlet-name>
+    <servlet-class>web.ServletModifer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletModifer</servlet-name>
+    <url-pattern>/ServletModifer</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <description></description>
+    <display-name>Admin</display-name>
+    <servlet-name>Admin</servlet-name>
+    <servlet-class>web.Admin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Admin</servlet-name>
+    <url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>AdminMedicamentaff</display-name>
+    <servlet-name>AdminMedicamentaff</servlet-name>
+    <servlet-class>web.AdminMedicamentaff</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminMedicamentaff</servlet-name>
+    <url-pattern>/AdminMedicamentaff</url-pattern>
+  </servlet-mapping>
+
+  <!--<servlet>
+    <description></description>
+    <display-name>AuthFile</display-name>
+    <servlet-name>AuthFile</servlet-name>
+    <servlet-class>web.AuthFile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthFile</servlet-name>
+    <url-pattern>/panier</url-pattern>
+  </servlet-mapping>-->
+  <servlet>
+    <description></description>
+    <display-name>FileUploadServlet</display-name>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>web.FileUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>acceuil</display-name>
+    <servlet-name>ServletAcceuil</servlet-name>
+    <servlet-class>web.ServletAcceuil</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletAcceuil</servlet-name>
+    <url-pattern>/accueil</url-pattern>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <!--<servlet>
+    <description></description>
+    <display-name>ServletDec</display-name>
+    <servlet-name>ServletDec</servlet-name>
+    <servlet-class>web.ServletDec</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDec</servlet-name>
+    <url-pattern>/deconnexion</url-pattern>
+  </servlet-mapping>-->
+  -<servlet>
+    <description></description>
+    <display-name>ServletDeconnexion</display-name>
+    <servlet-name>ServletDeconnexion</servlet-name>
+    <servlet-class>web.ServletDeconnexion</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletDeconnexion</servlet-name>
+    <url-pattern>/deconnexion</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>ServletLogin</display-name>
+    <servlet-name>ServletLogin</servlet-name>
+    <servlet-class>web.ServletLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletLogin</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+<!-- filter d'authentification -->
+  <filter>
+    <description></description>
+    <display-name>AuthFilter</display-name>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>web.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/panier</url-pattern>
+    <url-pattern>/commande</url-pattern>
+  </filter-mapping>
+
+
+<servlet>
+  <display-name>servletInscription</display-name>
+  <servlet-name>servletInscription</servlet-name>
+  <servlet-class>web.ServletInscription</servlet-class>
+
+</servlet>
+  <servlet-mapping>
+    <servlet-name>servletInscription</servlet-name>
+    <url-pattern>/inscription</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>servletPasserCommande</display-name>
+    <servlet-name>servletPasserCommande</servlet-name>
+    <servlet-class>web.ServletPasserCommande</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>servletPasserCommande</servlet-name>
+    <url-pattern>/commander</url-pattern>
+    <url-pattern>/cmd</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>

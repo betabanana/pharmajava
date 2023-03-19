@@ -1,0 +1,593 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+
+:root{
+    --min-color: #10cab7;
+    --secondery-color: #2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --mini-padding: 4px;
+    --max-color:  #ebeced;
+    --Mod : gray;
+  
+  }
+  /*duber table*/
+.table{
+    grid-area: ta;
+  }
+  
+ .table table{
+    width: 100%;
+  border-spacing: 1px;
+  }
+ .table table tbody tr td{
+  
+    text-align: center;
+  padding: 20px;  
+  background-color: white;
+  color: black;;
+  }
+  .table .mod i{
+    color: green;
+    font-size: 30px;
+  }
+  .table .mod button{
+    background-color: inherit;
+    border: none;
+     }
+ .table .modI i{
+    color: gold;
+    font-size: 30px;
+  }
+  .table .modI button{
+    background-color: inherit;
+    border: none;
+     }
+.table .supp button{
+    background-color: inherit;
+    border: none;
+     }
+  .table .supp i{
+    color: red;
+    font-size: 30px;
+  }
+ .table table thead td{
+    font-weight: bold;
+    background-color: #8080ff;
+    text-align: center;
+  }
+  
+   /*
+  fin table
+*/ 
+
+
+
+    /* dube Logo*/
+
+    .span1{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        color: blue;
+    }
+    .span2{
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        color: green;
+    }
+
+    .inpLo:checked + .logopfar{
+      display: none;
+    }
+     
+    .inpLo{
+      display: none;
+    }
+    /*2*/
+    
+    .inpLo2:checked + .logopfar2{
+      display: none;
+    }
+     
+    .inpLo2{
+      display: none;
+    }
+    /* fin logo */
+    /* dubet container*/
+    
+.container{
+  padding-left: 2px;
+  padding-right: 2px;
+ margin-left: auto;
+ margin-right: auto;  
+
+}
+/*moble*/
+@media (max-width: 767px){
+
+}
+/* samll screens*/
+@media (min-width: 768px){
+.container{
+width: 550px;
+}
+}
+/* medium screens*/
+@media (min-width: 992px){
+.container{
+  width: 770px;
+}
+}
+/* Lorge screens*/
+@media (min-width: 1100px){
+.container{
+  width: 900px;
+}
+
+}
+/* fin contenair*/
+
+/* dubet footer*/
+  .footer{
+  margin-top: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--secondery-color);
+  color: white;
+  text-align: center;
+ }
+ .footer span{
+  color: var(--min-color);
+  font-weight: bold;
+ }
+ 
+ /* fin footer*/
+ 
+ 
+ 
+/*  dube ajouter */
+.ajouterM{
+	display: none;
+}
+  .ajouterM label{
+    width : 20%;
+    display : inline-block;
+    text-align : left;
+    
+}
+.ajouterM  fieldset{
+        padding : 10px;
+        border-radius : 8px;
+        background:local ;
+    }
+    .ajouterM  legend{
+        font-size :1.4em;
+        margin-bottom: 20px;
+    }
+    .ajouterM   legend h1{
+        color: burlywood;
+    }
+    
+    .AjouterMedInput:checked  + div{
+    display: block;
+  }
+    .ajouterM{
+        width: 70%;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        background-color: var(--section-background);
+        margin-top: 30px;   
+        box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-webkit-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-moz-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+        
+    }
+    .ajouterM .radio{
+        position: absolute;
+        left: 30%;
+        bottom: 10%;
+    }
+    .ajouterM .radio input{
+        margin-top: 15px;
+        
+    }
+    .ajouterM input[type="text"], input[type="number"], .TEXTAREA{
+        border-radius : 5px;
+        padding : 5px;
+        width : 70%;
+        background-color : #ffff;
+        margin : 10px;
+    }
+    .ajouterM  .TEXTAREA{
+        border-radius : 5px;
+        padding : 5px;
+        width : 70%;
+        background-color : #ffff;
+        margin : 10px;
+        position: relative;
+        left: 20%;
+        
+    }
+   
+    .ajouterM  input[type="submit"]{
+        position :relative;
+        margin-top : 5px;
+        font-style : bold;
+        color :   #333;
+        padding : 10px;
+        font-size : 18px;
+        background-color: burlywood;
+        border : 2px solid #ffffff;
+        border-radius : 20px;
+        border: left 5px; 
+    }
+    .ajouterM input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(169, 156, 156);
+} 
+   .ajouterM .TEXTAREA:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(169, 156, 156);
+}
+  
+   .AjouterMedInput{
+
+    display: none;}
+    
+      .ajouterM .close{
+      width: 50px;
+      height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+   .ajouterM .close:hover{
+      background-color: red;
+    }
+          .ajouterM  .close_inst{
+      position  :relative;
+      width: 50px;
+      height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    border: none;
+
+    }
+    .ajouterM  .close_inst:hover{
+      background-color: red;
+    }
+  /* fin ajouter */
+  
+  
+  /* dub ajoute ins*/
+  
+  .ajouterI label{
+    width : 40%;
+    display : inline-block;
+    text-align : left;
+    color: black;
+    
+}
+.ajouterI  fieldset{
+        padding : 10px;
+        border-radius : 8px;
+        background:local ;
+    }
+    .ajouterI  legend{
+        font-size :1.4em;
+        margin-bottom: 20px;
+    }
+    .ajouteI   legend h1 {
+        color: burlywood;
+    }
+    .ajouterI{
+        width: 65%;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+         position: fixed;
+          top: 90px;
+          color: black;
+          z-index: 1000;
+        background-color: var(--section-background);
+        margin-top: 30px;   
+        box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-webkit-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-moz-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+        
+    }
+
+    .ajouterI  input[type="number"]{
+        border-radius : 5px;
+        position: relative;
+        left: -10px;
+        padding : 5px;
+        width :  52%;
+        background-color : #ffff;
+      
+    }
+    .ajouterI  input[type="submit"]{
+        position :relative;
+        margin-top : 5px;
+        font-style : bold;
+        color :   #333;
+        padding : 10px;
+        font-size : 18px;
+        background-color: burlywood;
+        border : 2px solid #ffffff;
+        border-radius : 20px;
+        border: left 5px; 
+    }
+    .ajouterI input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(169, 156, 156);
+} 
+   
+    .AjouterMedInput_Inst{
+    display: none;
+    }
+    .ajouterI{
+    display: block;
+    }
+      .ajouterI .close_inst{
+      position  :relative;
+      width: 50px;
+      height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    border: none;
+
+    }
+   .ajouterI .close_inst:hover{
+      background-color: red;
+    }
+      
+    
+  
+  /*fin ins*/
+  /*  dube ajouter */
+  
+  .ModiferMed label{
+    width : 20%;
+    display : inline-block;
+    text-align : left;
+    
+}
+.ModiferMed  fieldset{
+        padding : 10px;
+        border-radius : 8px;
+        background:local ;
+    }
+    .ModiferMed legend{
+        font-size :1.4em;
+        margin-bottom: 20px;
+    }
+    .ModiferMed   legend h1{
+        color: burlywood;
+    }
+    
+    .ModiferMed{
+        width: 70%;
+        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        background-color: var(--section-background);
+        margin-top: 30px;   
+        box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-webkit-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-moz-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+        
+    }
+    .ModiferMed .radio{
+        position: absolute;
+        left: 30%;
+        bottom: 10%;
+    }
+    .ModiferMed.radio input{
+        margin-top: 15px;
+        
+    }
+    .ModiferMed input[type="text"], input[type="number"]{
+        border-radius : 5px;
+        padding : 5px;
+        width : 70%;
+        background-color : #ffff;
+        margin : 10px;
+    }
+    .ModiferMed  input[type="submit"]{
+        position :relative;
+        margin-top : 5px;
+        font-style : bold;
+        color :   #333;
+        padding : 10px;
+        font-size : 18px;
+        background-color: burlywood;
+        border : 2px solid #ffffff;
+        border-radius : 20px;
+        border: left 5px; 
+    }
+    .ModiferMed input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(169, 156, 156);
+} 
+      .ModiferMed .close_inst{
+      position  :relative;
+      width: 50px;
+      height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    border: none;
+
+    }
+       .ModiferMed .TEXTAREA:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(169, 156, 156);
+}
+     .ModiferMed  .TEXTAREA{
+        border-radius : 5px;
+        padding : 5px;
+        width : 70%;
+        background-color : #ffff;
+        margin : 10px;
+        position: relative;
+        left: 20%;
+        
+    }
+   .ModiferMed .close_inst:hover{
+      background-color: red;
+    }
+     .ModiferMed  .TEXTAREA{
+        border-radius : 5px;
+        padding : 5px;
+        width : 70%;
+        margin : 10px;
+        position: relative;
+        left: 20%;
+        
+    }
+      .ModiferMed input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: rgb(169, 156, 156);
+} 
+     
+   
+  /* fin modifer*/
+/* rechercher*/
+.search-wrapper input{
+	border-radius: 10px;
+	
+	
+}
+.search-wrapper button {
+	
+	border: none;
+	background-color: inherit;
+		margin: 0;
+	padding: 0px;
+	
+	
+}
+.search-wrapper button p{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: var(--max-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+}
+.search-wrapper button p i{
+	font-size: 20px;
+  font-weight: bold; 
+  
+}
+
+.app-sidebar__heading button{
+	border: none;
+	background-color: inherit;
+		margin: 0;
+	padding: 0px;
+} 
+.app-sidebar__heading button span{
+	background-color: inherit;
+	font-size: 14.5px;
+	font-weight: 640;
+	margin: 0;
+	padding: 0px;
+}
+/*aff*/
+
+
+ .aff button {
+	background-color: inherit;
+	border: none; 
+}
+
+  .Med {
+    margin-top: 100px;
+    background: wheat;
+    width: 50%;
+     position: relative;
+     position: fixed;
+        top: 0;
+        left : 23%;
+        z-index: 10000;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-webkit-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+-moz-box-shadow: -32px 14px 168px 196px rgba(13,12,12,0.65);
+        
+
+
+  }
+  .Med .img {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Med .img img{
+    margin-top: 5px;
+    width: 450px;
+    height: 300px;
+  }
+  .Med .prixtitre{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .Med .desc{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   margin-bottom: 10px;
+  }
+  .Med .desc p{
+  text-align: center;
+  } 
+        .Med .close_inst{
+      position  :relative;
+      width: 50px;
+      height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    border: none;
+
+    }
+   .Med .close_inst:hover{
+      background-color: red;
+    }
+    
+  
